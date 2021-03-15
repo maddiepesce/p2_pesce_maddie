@@ -1,0 +1,322 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+  text-decoration: none;
+}
+
+footer, header, main {
+  display: block;
+}
+
+body {
+  background-color: black;
+	font-family: 'Antic Slab', sans-serif;
+}
+
+html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+/************* START 200 MEDIA QUERY **********************/
+
+@media (min-width: 200px) {
+
+h1 {
+  color: white;
+  cursor: default;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2.5em;
+  margin-top: 10%;
+  margin-left: 3.3%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section a {
+  color: white;
+  text-decoration: none;
+  transition: .3s;
+}
+
+section a:hover {
+  opacity: .5;
+  transition: .3s;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  background-color: black;
+  cursor: pointer;
+  display: inline;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2%;
+  text-align: center;
+  width: 100%;
+}
+
+nav ul li a {
+  color: white;
+  transition: .3s;
+}
+
+nav ul li:hover {
+  background-color: #ffcfe8;
+  transition: .3s;
+}
+
+.head-container {
+  display: flex;
+  justify-content: center;
+}
+
+.head1 {
+	font-size: 2em;
+	margin-left: 3%;
+}
+
+.head2 {
+  margin-left: 15%;
+}
+
+.about-title {
+	font-size: 4em;
+	padding-top: 5%;
+}
+
+.about-description {
+	font-size: 1.5em;
+	padding: 10%;
+}
+
+section {
+	color: white;
+  margin-top: -4px;
+	position: relative;
+	text-align: center;
+}
+
+.blog {
+	left: 10%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 80%;
+}
+
+img {
+	opacity: 1;
+	display: block;
+  width: 100%;
+  height: auto;
+	margin-top: 4px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+	width: 100%;
+}
+
+.bg {
+	border-radius: 25px;
+}
+
+.header {
+	margin-top: 3px;
+	opacity: 0.7;
+}
+
+section:hover .bg {
+	opacity: 0.5;
+}
+
+section:hover .middle {
+	opacity: .5;
+}
+
+.middle {
+	cursor: default;
+	transition: .5s ease;
+ 	opacity: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middle-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.text {
+  color: white;
+  font-size: 2.5em;
+	position: absolute;
+	top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	width: 200px;
+ }
+
+ .zodiac-container {
+	 display: flex;
+	 justify-content: center;
+ }
+
+ .zodiac {
+	 width: 50px;
+ }
+
+h2 {
+  color: white;
+  cursor: default;
+  font-family: 'Antic Slab', cursive;
+  font-size: 4em;
+  letter-spacing: .1em;
+	padding-top: 10%;
+	text-align: center;
+}
+
+section div p {
+  color: white;
+  font-size: 1.3em;
+  line-height: 1.2em;
+	padding-top: 15%;
+  text-align: center;
+  text-transform: uppercase;
+	width: 100%;
+}
+
+.bookings-text {
+	color: white;
+  font-size: 1.5em;
+  line-height: 1em;
+	margin: 10% 0 10% 15%;
+  text-align: center;
+  text-transform: uppercase;
+	width: 70%;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  font-size: 1.3em;
+  height: 10vh;
+  text-align: center;
+}
+
+footer p {
+  padding-top: 5%;
+}
+
+/****************bideo shit*************/
+		#container {
+      position: absolute;
+      top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+    }
+
+    #background_video {
+      position: absolute;
+      top: 50%;
+			left: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      height: 100%;
+			width: 100%;
+			z-index: -1000;
+    }
+
+    #video_cover {
+      position: absolute;
+      width: 100%;
+			height: 100%;
+      background: url('video_cover.jpeg') no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #video_controls {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    #play img {
+      width: 100px;
+    }
+    #pause img {
+      width: 90px;
+    }
+    #pause {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      #video_controls {
+        display: none;
+      }
+    }
+
+    /* Demo page specific styles */
+
+    #container {
+      height: 100%;
+			top: 40px;
+    }
+
+    #overlay {
+      position: absolute;
+      top: 20px; right: 0; left: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+	}
+/*************** END 200 MEDIA QUERY **********************/
+
+
+/*************** START 716 MEDIA QUERY **********************/
+@media (min-width: 716px) {
+
+h1 {
+    color: gray;
+    font-size: 4em;
+    margin-right: 3%;
+  }
+
+h2 {
+    color: white;
+    font-size: 6.5em;
+    letter-spacing: .2em;
+  }
+
+section a {
+		display: flex;
+	}
+
+section p {
+    color: white;
+		display: flex;
+		flex-flow: wrap;
+    font-size: 3.5em;
+		justify-content: center;
+    text-align: center;
+  }
+
+footer {
+    font-size: 1.4em;
+    padding-bottom: 5%;
+  }
+}
+/*************** END 716 MEDIA QUERY **********************/
